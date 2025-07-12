@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Tabelas</title>
+
+
+    <style>
+
+
+        body {
+
+
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+
+
+
+
+        table {
+
+
+            border-collapse: none; /* collapse */
+
+
+            width: 600px;
+
+
+        }
+
+
+
+
+
+        caption {
+
+
+            font-size: 1.3em;
+
+
+            font-weight: bolder;
+
+
+            padding: 10px;
+
+
+        }
+
+
+
+
+
+        .fundo {
+
+
+            background-color: rgb(121, 121, 121);
+
+
+            color: white;
+
+
+            font-weight: bolder;
+
+
+        }
+
+
+
+
+
+        tr {
+
+
+            text-align: center;
+
+
+        }
+
+
+
+
+
+        td, th {
+
+
+            border: 1px solid black;
+
+
+            padding: 10px;
+
+
+        }
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+    <table>
+
+
+        <caption>
+
+
+            Boletim
+
+
+        </caption>
+
+
+        <thead>
+
+
+            <tr>
+
+
+                <th rowspan="2" scope="row" class="fundo">Área</th>
+
+
+                <th rowspan="2" scope="rowgroup" class="fundo">Disciplina</th>
+
+
+                <th colspan="2" scope="colgroup" class="fundo">Notas</th>
+
+
+                <th rowspan="2" scope="rowgroup" class="fundo">Média</th>
+
+
+            </tr>
+
+
+            <tr>
+
+
+                <th scope="rowgroup" class="fundo">Nota 1</th>
+
+
+                <th scope="rowgroup" class="fundo">Nota 2</th>
+
+
+            </tr>
+
+
+          
+
+
+        </thead>
+
+
+        <tbody>
+
+
+            <tr>
+
+
+                <th rowspan="4" scope="rowgroup">Exatas</td>
+
+
+                <td>Matemática</td>
+
+
+                <td>0.0</td>
+
+
+                <td>0.0</td>
+
+
+                <td>0.0</td>
+
+
+            </tr>
+
+
+            <tr>
+
+
+               <td>Física</td>
+
+
+               <td>0.0</td>
+
+
+               <td>0.0</td>
+
+
+               <td>0.0</td>
+
+
+            </tr>
+
+
+            <tr>
+
+
+                <td>Química</td>
+
+
+                <td>0.0</td>
+
+
+                <td>0.0</td>
+
+
+                <td>0.0</td>
+
+
+            </tr>
+
+
+            <tr>
+
+
+                <td>Biologia</td>
+
+
+                <td>0.0</td>
+
+
+                <td>0.0</td>
+
+
+                <td>0.0</td>
+
+
+            </tr>
+
+
+            <tr>
+
+
+                <th colspan="4" scope="col" class="fundo">Média de Exatas</td>
+
+
+                <td class="fundo">0.0</td>
+
+
+            </tr>
+
+
+            <tr>
+
+
+                <th rowspan="2" rowspan="2" scope="rowgroup">Humanas</td>
+
+
+                <td>História</td>
+
+
+                <td>0.0</td>
+
+
+                <td>0.0</td>
+
+
+                <td>0.0</td>
+
+
+            </tr>
+
+
+            <tr>
+
+
+                <td>Geografia</td>
+
+
+                <td>0.0</td>
+
+
+                <td>0.0</td>
+
+
+                <td>0.0</td>
+
+
+            </tr>
+
+
+            <tr>
+
+
+                <th colspan="4" scope="col" class="fundo">Média de Humanas</td>
+
+
+                <td class="fundo">0.0</td>
+
+
+            </tr>
+
+
+        </tbody>
+
+
+    </table>
+
+
+    
+
+
+</body>
+
+
+</html>
