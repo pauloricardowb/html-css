@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="get" autocomplete="on">
+        <p>
+           <label for="iano">Em que ano você nasceu? </label>
+           <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()"> <!-- O modo como EU resolvi o problema foi o seguinte: oninput="iidade.innerHTML = 2025 - Number(iano.value)", neste caso não precisa usar um script a baixo do form, porém ele puxa apenas o ano definido por mim, o que não necessariamente vai ser o ano atual.--> 
+        </p>
+
+        <p>
+            <label for="iano" >Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <!-- script que pega ano atual e subtrai do ano de nascimento -->
+    <script> 
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+    
+</body>
+</html>
