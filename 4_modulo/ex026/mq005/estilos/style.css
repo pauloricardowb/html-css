@@ -20,8 +20,22 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+i#burguer {
+    background-color: rgb(54, 54, 54);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /* para virar uma  mãozinha */
+}
+
+i#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none; /* fazer desaparecer o menu */
 }
 
 menu > ul {
