@@ -6,12 +6,13 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
-    <header>
+<body onresize="mudouTamanho()"> <!-- onresize para introduzir um script -->
+    <header> 
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-        <menu id="itens">
+        <menu id="itens"> <!-- onclick para introduzir um script -->
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -32,8 +33,20 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ab sint ducimus porro quam fugiat, optio debitis veniam nam iure, tempora ratione atque quis fuga repudiandae? Debitis eaque magnam amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem at iusto velit tempore, ex accusantium vitae inventore ab! Deserunt ad incidunt quae hic possimus cum odio iste praesentium laboriosam sed.</p>
         </article>
     </main>
-    <!-- para esconder e aparecer o menu -->
     <script>
+
+    // para monitorar o tamanho da tela
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }        
+    
+    // para esconder e aparecer o menu 
+    
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
