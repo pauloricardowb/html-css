@@ -43,14 +43,21 @@ Grandes telas: acima de 1200px
 
     section#login > div#imagem {
         background-position: center;
-        float: left;
+        float: right; /* posicionamento da imagem dentro da section login */
         width: 50%;
         height: 100%;
     }
 
     section#login > div#formulario {
-        float: right;
+        float: left; /* direção dos contéudo do formulário */
         width: 50%;
-
     }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+    font-size: 1.2em;
+}
 }
