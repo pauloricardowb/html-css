@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Mea+Culpa&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+Grund:wght@100..400&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root { /* para definir variaveis */
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Bebas Nue', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* { /* seletor geral */
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-size: 7vh;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3.5em;
+}
+
+section.normal {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+section.imagem { 
+    background-color: rgba(0, 0, 0, 0.295);
+    color: white;
+    box-sizing: inset 5px 5px 10px black; /* sombras sendo aplicadas para dentro */
+    background-size: cover; /* usa toda a imagem */
+    background-position: center center;
+    background-attachment: fixed; /* para fazer o efeito paralax */
+    
+}
+
+section.imagem > p {
+    display: inline-block; /* nesse projeto ele comprime o efeito do background */
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.26);
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.437);
+}
+
+/**/
+section#img01 {
+    background-image:  url();
+    
+}
+
+section#img02 {
+    background-image: url();
+}
+
+footer {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    text-align: center;
+    padding: 3vw;
+}
+
+footer p > a {
+    color: white;
+    text-decoration: none; 
+    font-weight: bolder; /* deixar em negrito */
+
+}
+
+footer p > a:hover {
+    color: rgb(255, 202, 133);
+
+}
