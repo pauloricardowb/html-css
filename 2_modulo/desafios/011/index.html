@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        body {
+            overflow: hidden; /* para eliminar a barra de rolagem */
+        }
+
+        div.exterior > img {
+            position: relative;
+            background: url(imagens/espaco.jpg) no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        div.interior > img {
+            position: absolute;
+            width: 35vw;
+            top: 50%;
+            left:50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="exterior">
+        <img src="imagens/espaco.jpg" alt="espaço">
+    </div>
+    <div class="interior">
+        <img src="imagens/astronauta.png" alt="astronauta">
+    </div>
+</body>
+</html>
