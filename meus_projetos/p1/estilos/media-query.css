@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+-----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print { /* IMPRESSÂO */ 
+
+    * {
+        font-family:'Courier New', Courier, monospace; /* fonte para impressora */
+    }
+
+    body > p::after {
+        content: 'Essa impressão foi feita através do site htps://pauloricardowb.github.io/';
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+
+    section.normal p {
+    line-height: 2em;
+    font-size: 4vw;
+    width: 50vw;
+    }
+
+    section.imagem p {
+    line-height: 2em;
+    font-size: 4vw;
+    width: 50vw;
+    }
+
+    section#img02 {
+    background-position: top center;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer > p {
+    font-size: 1em;
+    }
+} 
+
+@media screen and (min-width: 992px) and (max-width: 1220px) { /* DESKTOP */
+
+    section.normal p {
+    line-height: 2em;
+    font-size: 4vw;
+    width: 50vw;
+    }
+
+    section.imagem p {
+    line-height: 2em;
+    font-size: 4vw;
+    width: 50vw;
+    }
+
+    footer {
+    padding: 10px;
+    }
+
+    footer > p {
+    font-size: 2em;
+    } 
+}
+
+@media screen and (min-width: 1200px) { /* Grandes telas */
+
+    section {
+    line-height: 7em;
+    }
+
+    section.normal p {
+    line-height: 2em;
+    font-size: 4vw;
+    width: 50vw;
+    }
+
+    section.imagem p {
+    line-height: 2em;
+    font-size: 4vw;
+    width: 50vw;
+    }
+
+    footer {
+    padding:10px;
+    }
+
+    footer > p {
+    font-size: 2em;
+    }
+}

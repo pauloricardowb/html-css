@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Mea+Culpa&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+Grund:wght@100..400&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root { /* para definir variaveis */
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Bebas Nue', cursive;
@@ -17,6 +18,7 @@
 html, body {
     font-family: var(--fonte1);
     background-color: antiquewhite;
+    min-height: 100vw;
 }
 
 header {
@@ -26,17 +28,20 @@ header {
 }
 
 header > h1 {
-    padding-top: 50px;
-    font-size: 7vh;
+    font-family: var(--fonte3);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 6vw;
 }
+
 
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 1em;
     padding-left: 30px;
     font-family: var(--fonte2);
-    font-size: 3.5em;
+    font-size: 2em;
 }
 
 section.normal {
@@ -44,17 +49,21 @@ section.normal {
     color: black;
 }
 
+section.normal > p {
+    width: 300px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.288);
+}
+
 section.imagem { 
     background-color: rgba(0, 0, 0, 0.295);
     color: white;
     box-sizing: inset 5px 5px 10px black; /* sombras sendo aplicadas para dentro */
     background-size: cover; /* usa toda a imagem */
-    background-position: center center;
     background-attachment: fixed; /* para fazer o efeito paralax */
-    
 }
 
 section.imagem > p {
+    width: 300px;
     display: inline-block; /* nesse projeto ele comprime o efeito do background */
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.26);
@@ -62,20 +71,20 @@ section.imagem > p {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.437);
 }
 
-/**/
 section#img01 {
-    background-image:  url();
-    
+    background-image:  url(../imagens/pexels-quang-nguyen-vinh-222549-2175270.jpg);
+    background-position: center center; 
 }
 
 section#img02 {
-    background-image: url();
+    background-image: url(../imagens/pexels-asadphoto-1024960.jpg);
+    background-position: right;
 }
 
 footer {
     background-color: black;
     color: rgb(255, 255, 255);
-    font-size: 2vw;
+    font-size: 1em;
     text-align: center;
     padding: 3vw;
 }
@@ -84,10 +93,8 @@ footer p > a {
     color: white;
     text-decoration: none; 
     font-weight: bolder; /* deixar em negrito */
-
 }
 
 footer p > a:hover {
     color: rgb(255, 202, 133);
-
 }
