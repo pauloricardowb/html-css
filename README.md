@@ -1,7 +1,7 @@
 Esse é um repositório de Estudos, pessoais, apenas.
 Tento acompanhar o curso de HTML5 e CSS3 disponibilizado pelo professor Gustavo Guanabara.<br><br>
 
-Uma observação interessante é que o professor usou uma ferramenta chamada GitHub Desktop que facilita consideravelmente o gerenciamento entre os repositórios locais e remotos - git e github - todávia não encontrei essa ferramenta para linux; logo tive que aprender os comandos git para fazer essa gestão entre os repositórios.<br><br>
+Uma observação interessante é que o professor usou uma ferramenta chamada GitHub Desktop que facilita consideravelmente o gerenciamento entre os repositórios locais e remotos - git e github - todávia não encontrei essa ferramenta para linux (não encontrei com grande facilidade, mas existe, ainda assim, acabei preferindo o terminal); logo tive que aprender os comandos git para fazer essa gestão entre os repositórios.<br><br>
 
 Links de referências:<br>
 
